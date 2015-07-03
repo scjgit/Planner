@@ -1,14 +1,11 @@
 (function(){
 	'use strict';
-	angular.module("plannerApp").controller("plannerCtrl",[
-		'$rootScope',
-		'$scope',
+	angular.module("plannerApp")
+	.controller("plannerCtrl",[
 		PlannerCtrl
 	]);
 
-	function PlannerCtrl($rootScope, $scope){
-		this.rootScope = $rootScope;
-		this.scope = $scope;
+	function PlannerCtrl(){
 
 		this.expenseList = [];
 

@@ -1,10 +1,10 @@
 module.exports = function (config) {
     config.set({
-        basePath: '',
         frameworks: ['jasmine'],
         files: [
             /* Framework */
             'bower_components/angular/angular.js',
+            'bower_components/angular-route/angular-route.js',
             'bower_components/angular-mocks/angular-mocks.js',
 
             /* Application code to test */
@@ -12,18 +12,22 @@ module.exports = function (config) {
             'src/controller/plannerCtrl.js',
 
             /* Test specs */
-            'unittest/*.js',
+            'test/ctrltest.js',
         ],
-        reporters: ['progress', 'coverage'],
         preprocessors: {
-          'src/**/*.js': ['coverage']
+            'src/module/main.js': ['coverage'],
+            'src/controller/plannerCtrl.js': ['coverage'],
+            'test/ctrltest.js': ['coverage'],
         },
+        reporters: ['progress', 'coverage'],
         coverageReporter: {
             type: 'html',
-            dir : 'coverage/'
+            dir: 'coverage/'
         },
-        // web server port
-        port: 9876,
-        singleRun: true
-    })
+        singleRun: false,
+        autoWatch: false,   
+        usePolling: true,
+        browsers: ['Chrome']
+    });
+    //console.log(config);
 };
