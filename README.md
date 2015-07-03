@@ -2,7 +2,7 @@
 
 ###How to run the application
 
-1. Open terminheal/git bash
+1. Open terminal/git bash
 2. Checkout the git repository : https://github.com/scjgit/Planner.git
 3. execute ```npm install```
 4. execute ```bower install```
