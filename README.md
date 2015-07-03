@@ -1,6 +1,6 @@
 # Planner
 
-###How to run the applicatione
+###How to run the application
 
 1. Open terminheal/git bash
 2. Checkout the git repository : https://github.com/scjgit/Planner.git
