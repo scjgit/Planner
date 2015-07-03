@@ -19,6 +19,7 @@
     "angular-route": "~1.4.1"
   },
   "devDependencies": {
-    "qunit": "~1.18.0"
+    "qunit": "~1.18.0",
+    "angular-mocks": "~1.4.1"
   }
 }
