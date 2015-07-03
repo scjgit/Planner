@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.outerDiv{
+	border: 1px solid #000; 
+	border-radius: 4px; 
+	padding: 10px;
+	width: 25%;
+	float: left;
+	margin:5px;
+}
+
+.divTitle{
+	padding: 5px;
+	border: 1px solid;
+}
+
+.outer-space{
+	margin:5px;
+}
+
+.innerDiv{
+	float:left; 
+	width: 25%;
+}
+
+.error{
+	color: RED;
+}
+
+.clearFix{
+	clear: both;
+}
+
+.jsonDiv{
+	border: 1px solid #000; 
+	border-radius: 4px; 
+	padding: 10px;
+	width: 50%;
+}

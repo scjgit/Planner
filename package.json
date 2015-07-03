@@ -1,0 +1,15 @@
+{
+  "name": "Planner",
+  "version": "1.0.0",
+  "description": "Planner",
+  "main": "Planner",
+  "dependencies": {
+    "express": "^4.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node myServer.js"
+  },
+  "author": "sallapcjoseph",
+  "license": "ISC"
+}

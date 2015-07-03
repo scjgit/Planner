@@ -1,0 +1,18 @@
+<div>
+	<span ng-bind="::vmPlannerCtrl.message"></span>
+	<div>
+		<button ng-click="vmPlannerCtrl.addExpense();">Add another Rate Plan</button>
+		<button ng-click="vmPlannerCtrl.saveExpense();">Save</button>
+	</div>
+	<form name="myform">
+		<div ng-repeat="expenses in vmPlannerCtrl.expenseList" class="outerDiv">
+			<div class="divTitle">Week {{$index+1}}</div>
+			<div ng-repeat="expense in expenses" class="outer-space">
+				<div ng-bind="expense.day" class="innerDiv"></div>
+				<input type="number" name="input{{$index}}" ng-model="expense.expense">
+			</div>
+			<span ng-show="!myform.$valid" class="error">Please enter a valid number</span>
+		</div>
+		<div ng-bind="vmPlannerCtrl.savedJson" class="clearFix jsonDiv"></div>
+	</form>
+</div>
