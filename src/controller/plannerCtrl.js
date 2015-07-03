@@ -11,6 +11,7 @@
 
 		//initialise expenseList
 		this.expenseList.push(this._createExpenseObj());
+		this.isShowConsolePanel = false;
 	}
 
 	PlannerCtrl.prototype = {
@@ -27,6 +28,7 @@
 		saveExpense: function(){
 			console.log(angular.toJson(this.expenseList));
 			this.savedJson = angular.toJson(this.expenseList);
+			this.isShowConsolePanel = true;
 		},
 
 		_createExpenseObj: function(){
