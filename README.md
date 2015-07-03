@@ -6,5 +6,9 @@
 2. Checkout the git repository : https://github.com/scjgit/Planner.git
 3. execute ```npm install```
 4. execute ```bower install```
-5. execute ``` node mySercer.js``
+5. execute ```gulp web``` or ``` node mySercer.js``
 6. Access : http://localhost:3000/
+
+
+###How to run the unit tests
+1. execute ```gulp tests```
